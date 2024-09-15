@@ -1,5 +1,6 @@
 # TgSpy (aka Telegram Online Tracker) 😞
-![ss (2024-03-18 at 13-42-32)](https://github.com/elite-nick/PostAai_TgSpy/assets/16212039/6280be62-b0c4-413b-b5f5-931a68b5642e)
+![313643654-6280be62-b0c4-413b-b5f5-931a68b5642e](https://github.com/user-attachments/assets/a9497b5b-1374-448c-8043-826e533b3725)
+
 
 *Современные проблемы требуют современных решений.*
 
