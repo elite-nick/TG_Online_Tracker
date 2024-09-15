@@ -1,60 +1,55 @@
-# PostAai 😞
-*modern problems require modern solutions.*
+# TgSpy (aka Telegram Online Tracker) 😞
+![ss (2024-03-18 at 13-42-32)](https://github.com/elite-nick/PostAai_TgSpy/assets/16212039/6280be62-b0c4-413b-b5f5-931a68b5642e)
 
-*- nobody 😵*
-#### Telegram User Online Activity Tracker
-This simple python based program allows a telegram user to know when other users he/she
-wishes to know about gets online/offline, and more. 💣 You just need to know their usernames,
-to get spying! 🤠 
+*Современные проблемы требуют современных решений.*
+
+#### Telegram User Online Activity Tracker (Отслеживание онлайна пользователя в Telegram)
+Эта простенькая программа, написанная на Python, позволяет узнавать, когда другие пользователи
+в Telegram'е выходят в сеть или нет.
+Для шпионажа достаточно знать их имена (логин) пользователей! 🤠
 
 ````bash
-X is online right now
-X & Y are both online right now
-.
-.
-.
-X & Y are both online right now
-X & Y are both offline right now
+Примеры вывода онлайна в консоли:
+X в онлайне!
+X и Y обе сейчас находятся в онлайне!
+...
+X и Y обе сейчас находятся в офлайне!
 ````
 
-The project is implemented using the python3 based telethon library, and the Telegram API.
-For running the project you would need to have an api_id and and api_hash, which can be 
-generated at https://my.telegram.org/apps.
+Проект реализован с использованием библиотеки telethon, основанной на Python 3.10,
+и API Telegram. Для запуска скрипта необходимо иметь **api_id** и **api_hash**,
+которые можно сгенерировать на сайте https://my.telegram.org/apps.
 
-***PS: This project ain't a big deal of code 😏, nor am I learning python with this 😂. $ItHelps 😎***
+### Возможности:
+* 👪 Отслеживание указанных пользователей в сети
+* 👫 Отслеживание того, находится ли заданная пара пользователей онлайн или оффлайн
+* 🕶 Работает также в том случае, если последний онлайн этого пользователя скрыт (статус "Недавно") (!) или у вас нет в его контактах
 
-### 🔪 Features
-* 👪 Track if a given list of users are online
-* 👫 Track if a given pair of users get online or offline
-* 🕶 Works also **if that user's last seen is hidden, or you are not in his contacts**
+### Как запустить?
+1. Клонируйте этот репозиторий или скачайте ZIP
+2. Сойздате python3 venv, например, такой командой `python3 -m venv .`, установите `python3` и `python3-venv` , если это еще не установлено
+3. Установите требования проекта из файла requirements.txt с помощью pip - `pip install -r requirements.txt`
+4. Обновите файл main.py, указав в нем имена пользователей и ключи api.
+5. Запустите main.py `python3.10 main.py` или Start.bat! 🎉 (Скрипт будет выполняться до тех пор, пока вы не выйдете из программы)
 
-### 🤿 How to Run
-1. Git clone this repo
-2. Create a python3 venv like `python3 -m venv .`, install `python3`, and `python3-venv` 
-if already not done
-3. Install project requirements from requirements.txt with pip - `pip install -r requirments.txt`
-4. Update the main.py with the usernames, and your api keys
-5. Run main.py! 🎉 (It will keep executing until you exit the program)
+### Примеры использования:
+🤔 Знать, когда начинать групповой разговор, когда члены вашей группы появляются в сети, чтобы вы могли начать беседу в оптимальное время
+🤥 Получать уведомления и отслеживать, когда ваш собеседник находится в сети, или, возможно, он вам лжет
 
-### 🔫 Future Features
-* Log tracking records with timestamps to a file
-* Telegram Bot Integration - get a message via bot about the notification.
+### Известные проблемы
+* Существует ограничение API для получения статуса, и если скрипт будет отслеживать слишком часто, Telegram запретит пользователю использовать эту функцию в течение 24 часов. При этом приложение Telegram будет по-прежнему доступно.
+* Скрипт может не успевать за очень быстрым заходом в онлайн и быстрым выходом в оффлайн.
 
-### 💉 Use Cases
-1. 🤫 Get notified and track if your child is online late nights :P [WIP]
-2. 🤔 Know when to start a group conversation, when members of your gang turn up online so that
-you guys can start off a convo. at optimal times
-2. 🤥 Get notified and track when your someone is online, or perhaps whether they
-are lying to you
+### 💬 ЧаВо:
 
-### ⚰ Known Issues
-* There is an API limit for fetching the status, and if we track too frequently, telegram 
-would ban the user for 24 hour from using this feature. Telegram App would still be accessible.
+**- Будет ли мой аккаунт, используемый в скрипте, в онлайне?**
+Нет, не будет.
 
-### 👅 Contributions
-Have been there?🥶 Helped you?😹
+**- Могут ли забанить мой аккаунт за этот скрипт?**
+Нет. Но если поставить очень частое сканирование профилей, то Telegram может ограничить эту функцию на 24 часа. 
 
-Let's fight together.🤘 Welcome! PRs Open!
+**- Могу ли я следить за пользователями, которые не находятся у меня в контактах (или не было с ними чата)?**
+Да, можно!
 
 ---
-Made with 💔, during #Covid19 by [@aswinshenoy](https://github.com/aswinshenoy).
+Original script and README file - https://github.com/pahlevikun/PostAai
